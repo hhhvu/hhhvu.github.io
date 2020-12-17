@@ -1,0 +1,37 @@
+theme: jekyll-theme-minimal
+layout: sidebar
+style: light
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 6
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    # - repo-name
+
+title: Huong Vu
+social_media: 
+  linkedin: huong-vu
+  website: https://hhhvu.github.io/
+  
+  
