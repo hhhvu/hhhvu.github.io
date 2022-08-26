@@ -6,34 +6,35 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
 
-<!-- begin SEO -->
+<head>
+  <meta charset="utf-8">
 
-
-
+  <!-- begin SEO -->
 
 
 
 
 
 
-<title>Huong Vu</title>
+
+
+
+  <title>Huong Vu</title>
 
 
 
 
-<meta name="description" content="Academic and personal site for Huong Vu">
+  <meta name="description" content="Academic and personal site for Huong Vu">
 
 
 
 
-<meta name="author" content="Huong Vu">
+  <meta name="author" content="Huong Vu">
 
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Huong Vu">
-<meta property="og:title" content="Huong Vu">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Huong Vu">
+  <meta property="og:title" content="Huong Vu">
 
 
   <link rel="canonical" href="https://hhhvu.github.io/blog/">
@@ -41,40 +42,40 @@
   <meta name="twitter:title" content="Huong Vu">
   <meta name="twitter:description" content="Academic and personal site for Huong Vu">
   <meta name="twitter:url" content="https://hhhvu.github.io/blog/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@Huong Vu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@Huong Vu">
 
-<!-- end SEO -->
+  <!-- end SEO -->
 
-<!-- <link href="https://hhhvu.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Huong Vu Feed"> -->
+  <!-- <link href="https://hhhvu.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Huong Vu Feed"> -->
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  function setModifiedDate() {
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    function setModifiedDate() {
       if (document.getElementById('last-modified')) {
         fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
           .then((response) => {
             return response.json();
           })
           .then((commits) => {
-            var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-            if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
-              document.getElementById('last-modified').textContent = "Last Modified: " + modified;
-            }
-          });
-      }
+            var modified = commits[0]['commit']['committer']['date'].slice(0, 10);
+            if (modified != "{{ page.date | date: " % Y -% m -% d" }}") {
+          document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+        }
+      });
     }
-</script>
+    }
+  </script>
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="https://hhhvu.github.io/assets/css/main.css">
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="https://hhhvu.github.io/assets/css/main.css">
 
-<!--[if lte IE 9]>
+  <!--[if lte IE 9]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -89,152 +90,160 @@
   </style>
 <![endif]-->
 
-<meta http-equiv="cleartype" content="on">
-    <!-- start custom head snippets -->
+  <meta http-equiv="cleartype" content="on">
+  <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+  <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
-<!-- end custom head snippets -->
-  </head>
+  <!-- end custom head snippets -->
+</head>
 
-  <body onload="setModifiedDate(); setAccessedDate();">
+<body onload="setModifiedDate(); setAccessedDate();">
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
-    <div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://hhhvu.github.io/">Huong Vu</a>
-        <ul class="visible-links">
-          
-            
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          <a class="site-title" href="https://hhhvu.github.io/">Huong Vu</a>
+          <ul class="visible-links">
+
+
             <li class="masthead__menu-item"><a href="https://hhhvu.github.io/">About</a></li>
-          
-            
+
+
             <li class="masthead__menu-item"><a href="https://hhhvu.github.io/research/">Research</a></li>
-          
-            
+
+
             <li class="masthead__menu-item"><a href="https://hhhvu.github.io/assets/pdfs/CV.pdf">CV</a></li>
-          
-            
+
+
             <!-- <li class="masthead__menu-item"><a href="https://hhhvu.github.io/teaching/">Teaching</a></li> -->
-          
-            
+
+
             <li class="masthead__menu-item"><a href="https://hhhvu.github.io/blog/">Personal Blog</a></li>
-          
-        </ul>
-        <button><div class="navicon"></div></button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+
+          </ul>
+          <button>
+            <div class="navicon"></div>
+          </button>
+          <ul class="hidden-links hidden"></ul>
+        </nav>
+      </div>
     </div>
   </div>
-</div>
-
-    
 
 
 
-<div id="main" role="main">
-  
-  <div class="sidebar sticky">
-  
 
-<div itemscope itemtype="http://schema.org/Person">
 
-  
-    <div class="author__avatar">
-      
-        <img src="https://hhhvu.github.io/assets/images/IMG_4909.jpg" class="author__avatar" alt="Huong Vu" itemprop="image">
-      
+  <div id="main" role="main">
+
+    <div class="sidebar sticky">
+
+
+      <div itemscope itemtype="http://schema.org/Person">
+
+
+        <div class="author__avatar">
+
+          <img src="https://hhhvu.github.io/assets/images/IMG_4909.jpg" class="author__avatar" alt="Huong Vu"
+            itemprop="image">
+
+        </div>
+
+
+        <div class="author__content">
+          <h3 class="author__name" itemprop="name">Huong Vu</h3>
+
+          <p class="author__bio" itemprop="description">
+            First year statistics PhD student at Berkeley.
+          </p>
+
+        </div>
+
+        <div class="author__urls-wrapper">
+          <button class="btn btn--inverse">Follow</button>
+          <ul class="author__urls social-icons">
+
+            <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+              <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Berkeley, CA</span>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/huong-vu-7353b980/" itemprop="sameAs">
+                <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/hhhvu" itemprop="sameAs">
+                <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
     </div>
-  
-
-  <div class="author__content">
-    <h3 class="author__name" itemprop="name">Huong Vu</h3>
-    
-      <p class="author__bio" itemprop="description">
-        First year statistics PhD student at Berkeley.
-      </p>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Berkeley, CA</span>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/huong-vu-7353b980/" itemprop="sameAs">
-            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/hhhvu" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
-          </a>
-        </li>
-      
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
 
 
-  <div class="archive">
-    
+    <div class="archive">
+
       <h1 class="page__title"></h1>
-    
-    <h3 class="archive__subtitle">Recent Posts</h3>
+
+      <h3 class="archive__subtitle">Recent Posts</h3>
 
 
 
-  </div>
-</div>
-
-    <div class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-05-11">May 11, 2022</time></p>
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-      <li><a href="http://github.com/hhhvu"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-
-      
-        <li>
-          <a href="https://www.linkedin.com/in/" itemprop="sameAs">
-            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-          </a>
-        </li>
-      
-      
-    <li><a href="https://hhhvu.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2020 Huong Vu. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
     </div>
+  </div>
 
-    <script src="https://hhhvu.github.io/assets/js/main.min.js"></script>
+  <div class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+      <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time
+          datetime="2022-05-11">May 11, 2022</time></p>
+
+      <!-- end custom footer snippets -->
+      <div class="page__footer-follow">
+        <ul class="social-icons">
+
+          <li><strong>Follow:</strong></li>
+
+          <li><a href="http://github.com/hhhvu"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+
+
+
+          <li>
+            <a href="https://www.linkedin.com/in/" itemprop="sameAs">
+              <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+
+
+          <li><a href="https://hhhvu.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i>
+              Feed</a></li>
+        </ul>
+      </div>
+
+      <div class="page__footer-copyright">&copy; 2020 Huong Vu. Powered by <a href="http://jekyllrb.com"
+          rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+          rel="nofollow">Minimal Mistakes</a>.</div>
+
+    </footer>
+  </div>
+
+  <script src="https://hhhvu.github.io/assets/js/main.min.js"></script>
 
 
 
 
 
-  </body>
+</body>
+
 </html>
